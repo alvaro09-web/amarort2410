@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vortex City, el videojuego de mundo abierto de Vortex Games.">
+  <title>Vortex Games | Vortex City</title>
+
+  <!-- CONEXIÓN CON CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CONEXIÓN CON JAVASCRIPT -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="aviso">
+  PROYECTO EDUCATIVO · PRECIOS Y RESERVAS DE DEMOSTRACIÓN
+</div>
+
+<header>
+  <a href="#inicio" class="logo">VORTEX <span>GAMES</span></a>
+
+  <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
+
+  <nav id="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#juego">El juego</a>
+    <a href="#mundo">Mapa</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#personajes">Personajes</a>
+    <a href="#ediciones">Ediciones</a>
+    <a href="#reserva">Reservar</a>
+  </nav>
+
+  <button id="abrirCarrito" class="boton">
+    🛒 <span id="contador">0</span>
+  </button>
+</header>
+
+<main>
+
+  <!-- INICIO -->
+  <section id="inicio" class="hero">
+    <div class="contenedor">
+      <p class="etiqueta">EL MUNDO ABIERTO EVOLUCIONA</p>
+
+      <h1>VORTEX<br><span>CITY</span></h1>
+
+      <h3>TU CIUDAD. TU HISTORIA. TUS DECISIONES.</h3>
+
+      <p>
+        Descubre una nueva generación de mundos abiertos.
+        Explora ciudades, construye tu futuro y decide
+        cómo quieres vivir tu propia aventura.
+      </p>
+
+      <a class="boton" href="#juego">DESCUBRE EL JUEGO →</a>
+      <a class="boton secundario" href="#ediciones">VER EDICIONES</a>
+
+      <p class="detalle">
+        PC · PLAYSTATION · XBOX · LANZAMIENTO POR CONFIRMAR
+      </p>
+    </div>
+  </section>
+
+  <!-- INFORMACIÓN -->
+  <section id="juego" class="seccion contenedor">
+    <p class="etiqueta">01 / NUESTRO VIDEOJUEGO</p>
+    <h2>NO ES SOLO UN JUEGO. <span>ES TU MUNDO.</span></h2>
+
+    <p>
+      Vortex City es un videojuego conceptual de acción, aventura
+      y mundo abierto creado por Vortex Games.
+      Nuestro objetivo es competir con los grandes títulos
+      del género, como GTA V, ofreciendo más actividades,
+      mayor libertad y decisiones que cambian la historia.
+    </p>
+
+    <div class="cuadricula">
+      <article class="tarjeta">
+        <div class="emoji">🌆</div>
+        <h3>MUNDO GIGANTESCO</h3>
+        <p>Ciudades, playas, montañas, pueblos y lugares secretos.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">🎭</div>
+        <h3>HISTORIA DINÁMICA</h3>
+        <p>Tus decisiones influyen en personajes y misiones.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">🚘</div>
+        <h3>VEHÍCULOS</h3>
+        <p>Personaliza coches y participa en competiciones.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">🏠</div>
+        <h3>PROPIEDADES</h3>
+        <p>Compra casas y crea tu propio estilo de vida.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">💼</div>
+        <h3>NEGOCIOS</h3>
+        <p>Desarrolla negocios y proyectos dentro del videojuego.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">🤝</div>
+        <h3>VORTEX ONLINE</h3>
+        <p>Eventos y misiones cooperativas con amigos.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section id="mundo" class="seccion oscuro">
+    <div class="contenedor">
+      <p class="etiqueta">02 / EXPLORA</p>
+      <h2>DESCUBRE <span>VORTEX CITY</span></h2>
+
+      <p>Selecciona una región para conocer sus características.</p>
+
+      <div class="mapa">
+        <button data-region="centro">🌆 Neon Core</button>
+        <button data-region="costa">🏖️ Costa Azul</button>
+        <button data-region="montana">⛰️ Los Altos</button>
+        <button data-region="puerto">🚢 Puerto Vortex</button>
+        <button data-region="desierto">🏜️ Desierto</button>
+        <button data-region="bosque">🌲 Bosque Norte</button>
+      </div>
+
+      <div class="tarjeta">
+        <h3 id="nombreRegion">NEON CORE</h3>
+        <p id="descripcionRegion">
+          El centro de la ciudad, lleno de rascacielos,
+          actividades y secretos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVIDADES -->
+  <section id="actividades" class="seccion contenedor">
+    <p class="etiqueta">03 / EXPERIENCIAS</p>
+    <h2>SIEMPRE HAY <span>ALGO QUE HACER.</span></h2>
+
+    <div class="cuadricula">
+      <article class="tarjeta">
+        <div class="emoji">🏎️</div>
+        <h3>CARRERAS</h3>
+        <p>Compite y mejora tus vehículos.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">🏡</div>
+        <h3>CASAS</h3>
+        <p>Compra y personaliza propiedades.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">🏢</div>
+        <h3>EMPRESAS</h3>
+        <p>Crea negocios dentro del mundo virtual.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">🏄</div>
+        <h3>DEPORTES</h3>
+        <p>Descubre nuevas actividades por toda la ciudad.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">🕵️</div>
+        <h3>MISTERIOS</h3>
+        <p>Investiga secretos y encuentra misiones ocultas.</p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="emoji">🌦️</div>
+        <h3>MUNDO DINÁMICO</h3>
+        <p>Clima, horarios y eventos cambiantes.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PERSONAJES -->
+  <section id="personajes" class="seccion oscuro">
+    <div class="contenedor">
+      <p class="etiqueta">04 / LA HISTORIA</p>
+      <h2>TRES VIDAS. <span>UNA CIUDAD.</span></h2>
+
+      <div class="cuadricula">
+        <article class="tarjeta">
+          <div class="personaje">01</div>
+          <h3>ALEX VEGA</h3>
+          <p>Un conductor que busca comenzar una nueva vida.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="personaje">02</div>
+          <h3>NORA CRUZ</h3>
+          <p>Especialista en tecnología e investigación.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="personaje">03</div>
+          <h3>LEO RIVAS</h3>
+          <p>Un emprendedor que quiere conquistar la ciudad.</p>
+        </article>
+      </div>
+
+      <div class="tarjeta historia">
+        <h3>DECIDE TU HISTORIA</h3>
+        <p>Encuentras una mochila con información importante.</p>
+
+        <button class="boton opcion" data-opcion="devolver">
+          Buscar al dueño
+        </button>
+
+        <button class="boton opcion" data-opcion="investigar">
+          Investigar
+        </button>
+
+        <button class="boton opcion" data-opcion="ignorar">
+          Seguir caminando
+        </button>
+
+        <p id="resultadoHistoria">¿Qué harías?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDICIONES -->
+  <section id="ediciones" class="seccion contenedor">
+    <p class="etiqueta">05 / EDICIONES</p>
+    <h2>ELIGE TU <span>EDICIÓN.</span></h2>
+    <p>Precios inventados para el proyecto educativo.</p>
+
+    <div class="cuadricula ediciones">
+      <article class="tarjeta">
+        <h3>STANDARD</h3>
+        <div class="precio">59,99 €</div>
+        <p>✔ Juego base</p>
+        <p>✔ Historia completa</p>
+        <p>✔ Acceso al mundo abierto</p>
+        <button class="boton elegir" data-edicion="standard">
+          SELECCIONAR
+        </button>
+      </article>
+
+      <article class="tarjeta destacada">
+        <p class="etiqueta">MÁS POPULAR</p>
+        <h3>DELUXE</h3>
+        <div class="precio">79,99 €</div>
+        <p>✔ Juego base</p>
+        <p>✔ Extras digitales conceptuales</p>
+        <p>✔ Vehículos y atuendos especiales propuestos</p>
+        <button class="boton elegir" data-edicion="deluxe">
+          SELECCIONAR
+        </button>
+      </article>
+
+      <article class="tarjeta">
+        <h3>ULTIMATE</h3>
+        <div class="precio">99,99 €</div>
+        <p>✔ Contenido Deluxe</p>
+        <p>✔ Extras digitales conceptuales</p>
+        <p>✔ Personalización adicional propuesta</p>
+        <button class="boton elegir" data-edicion="ultimate">
+          SELECCIONAR
+        </button>
+      </article>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section id="reserva" class="seccion oscuro">
+    <div class="contenedor">
+      <p class="etiqueta">06 / RESERVAS</p>
+      <h2>PREPARA TU <span>RESERVA.</span></h2>
+
+      <form id="formReserva" class="tarjeta formulario">
+        <label for="edicion">Edición</label>
+        <select id="edicion">
+          <option value="standard">Standard — 59,99 €</option>
+          <option value="deluxe">Deluxe — 79,99 €</option>
+          <option value="ultimate">Ultimate — 99,99 €</option>
+        </select>
+
+        <label for="plataforma">Plataforma</label>
+        <select id="plataforma">
+          <option>PC</option>
+          <option>PlayStation</option>
+          <option>Xbox</option>
+        </select>
+
+        <label for="formato">Formato</label>
+        <select id="formato">
+          <option>Digital</option>
+          <option>Físico</option>
+        </select>
+
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" min="1" max="5" value="1">
+
+        <div class="total">
+          <span>Precio total</span>
+          <strong id="precioTotal">59,99 €</strong>
+        </div>
+
+        <button type="submit" class="boton">
+          AÑADIR AL CARRITO
+        </button>
+
+        <p id="estadoReserva" role="status"></p>
+        <small>Esta reserva es una simulación sin pagos reales.</small>
+      </form>
+    </div>
+  </section>
+
+  <!-- NOTICIAS -->
+  <section class="seccion contenedor">
+    <p class="etiqueta">07 / ACTUALIZACIONES</p>
+    <h2>ÚLTIMAS <span>NOVEDADES.</span></h2>
+
+    <div class="cuadricula">
+      <article class="tarjeta">
+        <h3>EL MAPA DE VORTEX CITY</h3>
+        <p>Descubre las seis regiones del mundo abierto.</p>
+        <a href="#mundo">EXPLORAR →</a>
+      </article>
+
+      <article class="tarjeta">
+        <h3>CONOCE A LOS PROTAGONISTAS</h3>
+        <p>Descubre los personajes principales de la historia.</p>
+        <a href="#personajes">DESCUBRIR →</a>
+      </article>
+
+      <article class="tarjeta">
+        <h3>LAS EDICIONES</h3>
+        <p>Consulta los precios de demostración.</p>
+        <a href="#ediciones">VER PRECIOS →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="seccion oscuro">
+    <div class="contenedor">
+      <h2>PREGUNTAS <span>FRECUENTES.</span></h2>
+
+      <details>
+        <summary>¿Cuándo sale Vortex City?</summary>
+        <p>No hay una fecha de lanzamiento confirmada.</p>
+      </details>
+
+      <details>
+        <summary>¿Puedo reservarlo de verdad?</summary>
+        <p>No. Esta web es una demostración educativa.</p>
+      </details>
+
+      <details>
+        <summary>¿En qué plataformas estará disponible?</summary>
+        <p>El proyecto contempla PC, PlayStation y Xbox.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <h3>VORTEX GAMES</h3>
+  <p>BEYOND THE GAME</p>
+  <p>© 2026 Vortex Games · Proyecto educativo ficticio.</p>
+  <a href="#inicio">VOLVER ARRIBA ↑</a>
+</footer>
+
+<!-- CARRITO -->
+<dialog id="carrito">
+  <div class="cabecera-carrito">
+    <h2>🛒 TU CARRITO</h2>
+    <button id="cerrarCarrito" aria-label="Cerrar carrito">✕</button>
+  </div>
+
+  <div id="productosCarrito"></div>
+
+  <div class="total">
+    <span>Total</span>
+    <strong id="totalCarrito">0,00 €</strong>
+  </div>
+
+  <button id="vaciarCarrito" class="boton secundario">
+    VACIAR
+  </button>
+
+  <button id="confirmarReserva" class="boton">
+    SIMULAR RESERVA
+  </button>
+
+  <p id="mensajeCarrito" role="status"></p>
+  <small>No se realiza ningún pago real.</small>
+</dialog>
+
+</body>
+</html>
