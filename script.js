@@ -1,4 +1,4 @@
-console.log("Vortex Games: JavaScript cargado correctamente")
+
 
 // VORTEX GAMES - JAVASCRIPT COMPLETO
 
@@ -502,10 +502,3 @@ actualizarRetos();
 actualizarReputacion();
 
 console.log("Vortex Games: página inicializada.");
-const botonPrueba = document.getElementById("pruebaJS");
-
-if (botonPrueba) {
-    botonPrueba.addEventListener("click", function() {
-        alert("¡JavaScript funciona en Vortex Games!");
-    });
-}
