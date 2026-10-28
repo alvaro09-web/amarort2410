@@ -978,3 +978,72 @@ footer small {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* CORRECCIÓN VISUAL VORTEX GAMES */
+
+#mapa .mapa-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+  margin-top: 35px;
+}
+
+#mapa .mapa-visual {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  align-items: center;
+  min-height: 360px;
+  padding: 25px;
+  background: radial-gradient(circle, #5e2c9a, #23335b 60%, #0d1328);
+  border: 1px solid #af6bff66;
+  border-radius: 18px;
+}
+
+#mapa .mapa-visual button {
+  display: block;
+  width: 100%;
+  padding: 18px 10px;
+  color: white;
+  background: #241d42;
+  border: 1px solid #af6bff77;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#mapa .mapa-visual button:hover,
+#mapa .mapa-visual button.activo {
+  background: #8142ca;
+  transform: translateY(-3px);
+}
+
+#mapa .mapa-detalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 30px;
+  background: #19182b;
+  border: 1px solid #af6bff55;
+  border-radius: 18px;
+}
+
+#mapa .mapa-detalle h3 {
+  font-size: 34px;
+  color: #af6bff;
+}
+
+@media (max-width: 800px) {
+  #mapa .mapa-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  #mapa .mapa-visual {
+    grid-template-columns: 1fr;
+  }
+}
